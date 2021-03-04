@@ -15,15 +15,15 @@ int main(void)
 	do
 	{
 		// longest response is 200 chars atm!
-		char * input[200];
-		char * response[200];
+		char input[200];
+		char response[200];
 
-		take_input(*input);
-		respond_to(*input, *response);
+		take_input(input);
+		respond_to(input, response);
 		//printf("%s", response);
 
 		// check if user wants to exit
-		if (strcmp(*response, "quit") == 0)
+		if (strcmp(response, "quit") == 0)
 		{
 			quit = true;
 		}
