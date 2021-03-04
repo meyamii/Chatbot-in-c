@@ -8,7 +8,9 @@ void greeting()
 
 void take_input(char * input)
 {
-	printf("Hello\n");
+	printf("\n ############# Give Input #############\n>>> ");
+
+    	strcpy(input, fgets(input, 200, stdin)); //copy input from stdin to input pointer
 }
 
 void respond_to(char * input, char * response)
